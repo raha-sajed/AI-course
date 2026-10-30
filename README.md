@@ -9,7 +9,7 @@ Homework 1 and three mini projects from an introductory artificial intelligence 
 
 | Part | Topics | Assignment | Notebooks | Status |
 | --- | --- | --- | --- | --- |
-| [Homework 1](HomeWork1/) | Linear algebra, signal processing and Iris | [Questions](HomeWork1/AI4032_HW1.pdf) | [Revised homework](HomeWork1/HomeWork1.ipynb); [original notebook](HomeWork1/HW1HOOSH.ipynb) | Linear algebra corrected; signal analysis runs; Iris pending |
+| [Homework 1](HomeWork1/) | Linear algebra, signal processing and Iris | [Questions](HomeWork1/AI4032_HW1.pdf) | [Revised homework](HomeWork1/HomeWork1.ipynb); [original notebook](HomeWork1/HW1HOOSH.ipynb) | Linear algebra and signal exercise complete; Iris pending |
 | [Mini Project 1](MiniProject1/) | Titanic classification, regression and outliers | [Questions](<MiniProject1/AI4032_MP1 (1).pdf>) | [Titanic](MiniProject1/MiniProject1.ipynb); regression [1](MiniProject1/MiniProject1.2.ipynb), [2](MiniProject1/MiniProject1.3.ipynb), [3](MiniProject1/MiniProject1.4.ipynb) | Corrections and fresh execution pending |
 | [Mini Project 2](MiniProject2/) | Simple neurons, weather forecasting and Hopfield networks | [Questions](MiniProject2/AI4032_MP2.pdf) | [Neurons](MiniProject2/Ai_MiniProject2_Q1.ipynb); image experiments [1](MiniProject2/Ai_MiniProject2_Q3_1.ipynb), [2](MiniProject2/Ai_MiniProject2_Q3_2.ipynb), [3](MiniProject2/Ai_MiniProject2_Q3_3.ipynb) | Weather data available; implementation and validation pending |
 | [Mini Project 3](MiniProject3/) | Fuzzy systems, robot control and ANFIS | [Questions](MiniProject3/AI4032_MP3.pdf) | [Notebook](MiniProject3/MP3.ipynb) | Scientific and implementation corrections pending |
@@ -30,7 +30,7 @@ Signal analysis can also run directly from the repository root:
 python HomeWork1/signal_analysis.py
 ```
 
-It currently produces **3,829 signal segments** and their mean, standard deviation and RMS. The [feature table](HomeWork1/results/segment_features.csv) and [figure](HomeWork1/results/signal_analysis.png) are stored under Homework 1. The sampling rate is unverified, so frequency is expressed in cycles per sample.
+It currently produces **3,829 signal segments** and their mean, standard deviation and RMS. The [feature table](HomeWork1/results/segment_features.csv) and [figure](HomeWork1/results/signal_analysis.png) are stored under Homework 1. The signal uses 48 kHz as specified in the assignment and the [CWRU source table](https://engineering.case.edu/bearingdatacenter/48k-drive-end-bearing-fault-data); time and frequency are shown in seconds and Hz. The CSV contains only the three requested features, without an index column.
 
 ## Data and references
 

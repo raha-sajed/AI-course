@@ -1,34 +1,99 @@
 {
   "revision_owner": "raha-sajed",
   "data_sha256": "6c27615a61f19f05f65cf2cc2aa4bca5bda051c9d93a708d0ee8baf5138834fa",
+  "data_source": "https://engineering.case.edu/bearingdatacenter/48k-drive-end-bearing-fault-data",
+  "mat_reader_type": "dict",
+  "mat_fields": [
+    "__header__",
+    "__version__",
+    "__globals__",
+    "X201_DE_time",
+    "X201_FE_time",
+    "X201RPM"
+  ],
+  "mat_variables": {
+    "X201_DE_time": {
+      "shape": [
+        245140,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "X201_FE_time": {
+      "shape": [
+        245140,
+        1
+      ],
+      "dtype": "float64"
+    },
+    "X201RPM": {
+      "shape": [
+        1,
+        1
+      ],
+      "dtype": "uint16"
+    }
+  },
   "signal_key": "X201_DE_time",
   "n_samples": 245140,
+  "sampling_rate_hz": 48000.0,
+  "sampling_rate_status": "48 kHz as specified in assignment and CWRU 48k table",
+  "duration_seconds": 5.107083333333334,
+  "last_sample_seconds": 5.1070625,
+  "zoom_interval_seconds": [
+    2.0,
+    2.01
+  ],
+  "zoom_samples": 480,
   "window_length": 128,
   "overlap": 64,
   "hop_length": 64,
   "n_windows": 3829,
+  "segments_shape": [
+    3829,
+    128
+  ],
+  "overlay_rows_zero_based": [
+    13,
+    26,
+    39,
+    52,
+    65,
+    78,
+    91,
+    104,
+    117,
+    130
+  ],
   "discarded_tail_samples": 20,
-  "preprocessing": "Subtract the mean of the entire signal; descriptive analysis, no predictive split",
+  "feature_input": "Original uncentered signal windows",
+  "fft_preprocessing": "Subtract global mean for spectrum only; exclude DC when finding dominant frequency",
+  "fft_amplitude": "Single-sided amplitude / N; double positive bins except Nyquist",
   "std_ddof": 0,
-  "sampling_rate_hz": null,
-  "sampling_rate_status": "Unknown; no physical time or Hz is inferred",
-  "dominant_frequency": 4.079301623562046e-06,
-  "frequency_unit": "cycles/sample",
+  "dominant_frequency_hz": 0.19580647793097825,
+  "fft_bin_width_hz": 0.19580647793097822,
+  "dominant_is_lowest_positive_bin": true,
+  "csv_columns": [
+    "mean",
+    "std",
+    "rms"
+  ],
+  "csv_index_written": false,
   "feature_summary": {
     "mean": {
       "count": 3829.0,
-      "mean": 3.2399665213182725e-06,
+      "mean": 0.3960568627378106,
       "std": 0.05636768549893634,
-      "min": -0.1123709256559047,
-      "25%": -0.04884102180975086,
-      "50%": -0.00330745450205855,
-      "75%": 0.04695418492101837,
-      "max": 0.12504805030563376
+      "min": 0.28368269711538463,
+      "25%": 0.34721260096153844,
+      "50%": 0.3927461682692308,
+      "75%": 0.44300780769230774,
+      "max": 0.5211016730769231
     },
     "std": {
       "count": 3829.0,
       "mean": 0.13296520999561137,
-      "std": 0.04432066292514319,
+      "std": 0.044320662925143195,
       "min": 0.046021973769265805,
       "25%": 0.1053776703307813,
       "50%": 0.12620446143127798,
@@ -37,13 +102,13 @@
     },
     "rms": {
       "count": 3829.0,
-      "mean": 0.14492157805618033,
-      "std": 0.042640971763542417,
-      "min": 0.050820745471442365,
-      "25%": 0.11809236183837579,
-      "50%": 0.13942347864475324,
-      "75%": 0.162834796591163,
-      "max": 0.6496375017315797
+      "mean": 0.4200678521397906,
+      "std": 0.056788394427088405,
+      "min": 0.2968719385194346,
+      "25%": 0.3733058797761717,
+      "50%": 0.4180539549341588,
+      "75%": 0.4645702023304657,
+      "max": 0.7514791745435491
     }
   },
   "all_features_finite": true
