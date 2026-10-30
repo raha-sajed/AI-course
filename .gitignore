@@ -1,0 +1,23 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.pytest_cache/
+.cache/
+data/raw/
+final/data/Household_power_consumption.csv
+*.joblib
+
+# Local backups and preservation records.
+/.local-archive/
+
+# Original group reports: retained locally, excluded from future Git versions.
+/HomeWork1/گزارش- تکلیف اول هوش مصنوعی.pdf
+/MiniProject1/MINIProject1Report.pdf
+/MiniProject3/miniproject3.pdf
+
+
+# Inactive final-project revisions are preserved locally, outside the four-part portfolio.
+/portfolio/
+/tests/
